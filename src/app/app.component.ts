@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountriesService } from './services/countries.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'theCountriesWiki';
+  title = 'The Countries Wiki';
+  public countries:Array<any>=[];
+  singleCountry=false;
+
+  constructor(private countriesService:CountriesService){}
+
 }
