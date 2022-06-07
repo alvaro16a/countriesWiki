@@ -14,6 +14,8 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nameCountry="";
+
   startNewSearch(value: string) {
     this.newSearchEvent.emit(value);
   }

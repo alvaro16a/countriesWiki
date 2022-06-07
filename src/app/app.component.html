@@ -1,1 +1,51 @@
-<app-search></app-search>
+<app-search (newSearchEvent)="addKeywords($event)" ></app-search>
+
+<div *ngIf="singleCountry; else manyCountries" class="singleCountry">
+    <div *ngFor="let country of countries">
+      <h1>{{country.name.official}}</h1>
+      <img src={{country.flags.svg}} alt="Flag" width="250" >
+      <h6>Country flag</h6>
+      <img src={{country.coatOfArms.svg}} alt="arms" width="180" >
+      <h6>Coat of arms</h6>
+      <table class="table table-hover table-bordered table-sm countries">
+        <thead>
+          <tr>
+            <th scope="col">Capital</th>
+            <th scope="col">Poblacion</th>
+            <th scope="col">Area [Km²]</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td>{{country.capital}}</td>
+            <td>{{country.population}}</td>
+            <td>{{country.area}}</td> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <ng-template #manyCountries >
+    se mas especifico
+    <table class="table table-hover table-bordered table-sm countries">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Capital</th>
+          <th scope="col">Poblacion</th>
+          <th scope="col">Area [Km²]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let country of countries;let index=index">
+          <th scope="row">{{index+1}}</th>
+          <td>{{country.name.common}}</td>
+          <td>{{country.capital}}</td>
+          <td>{{country.population}}</td>
+          <td>{{country.area}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-template>
