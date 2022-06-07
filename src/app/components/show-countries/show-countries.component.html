@@ -1,0 +1,16 @@
+<table class="countries">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Capital</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries;let index=index">
+        <th scope="row">{{index+1}}</th>
+        <td>{{country.name.common}}</td>
+        <td>{{country.capital}}</td>
+      </tr>
+    </tbody>
+  </table>
