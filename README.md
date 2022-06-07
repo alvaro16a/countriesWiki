@@ -1,6 +1,13 @@
 
 
 
+![1](https://user-images.githubusercontent.com/14096089/172440381-d46735fb-d099-45f3-917d-5b998ea024c0.png)
+![2](https://user-images.githubusercontent.com/14096089/172440403-6afab157-a5b6-43f2-9242-6e1f3470f58a.png)
+![3](https://user-images.githubusercontent.com/14096089/172440423-13b88079-1454-4ce2-b459-5f5a42c0c6cc.png)
+![5](https://user-images.githubusercontent.com/14096089/172440486-64185e0b-b4ad-471e-a845-016d23c833da.png)
+
+![4](https://user-images.githubusercontent.com/14096089/172440470-a181c62b-5ef7-4016-9598-3aba9f2ce925.png)
+
 
 # TheCountriesWiki
 
